@@ -11,12 +11,12 @@ $('.title').on('click', function() {//タイトル要素をクリックしたら
 });
 
 $('.box').on('click', function() {//タイトル要素をクリックしたら
-	var findElm = $(this);//直後のアコーディオンを行うエリアを取得し
-	$(findElm).slideToggle();//アコーディオンの上下動作
+	$(this).slideToggle();//アコーディオンの上下動作
     
-	if($(this).hasClass('close')){//タイトル要素にクラス名closeがあれば
-		$(this).removeClass('close');//クラス名を除去し
+	var findElm = $(this).back(".title");//直後のアコーディオンを行うエリアを取得し
+	if($(findElm).hasClass('close')){//タイトル要素にクラス名closeがあれば
+		$(findElm).removeClass('close');//クラス名を除去し
 	}else{//それ以外は
-		$(this).addClass('close');//クラス名closeを付与
+		$(findElm).addClass('close');//クラス名closeを付与
 	}
 });
