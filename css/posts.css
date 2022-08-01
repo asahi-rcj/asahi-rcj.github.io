@@ -1,0 +1,70 @@
+.postslist li{
+    display:flex;
+    list-style: none;
+    margin-bottom:10px;
+    margin-right:10px;
+    border-radius: 10px;
+    animation:postunhoveranime 0.5s forwards;
+}
+
+.postslist li:hover{
+    list-style: none;
+    animation:posthoveranime 0.5s forwards;
+}
+
+.postslist li a{
+    font-size: 35px;
+    padding:5px 5px;
+    margin-top:-5px;
+    margin-left:10px;
+    color:#e6e6e6;
+    text-decoration-line:none;
+}
+
+.postslist li a p{
+    font-size: 20px;
+    padding:5px 5px;
+    margin-left:20px;
+    color:#e6e6e6;
+    text-decoration-line:none;
+}
+
+.postslist li a p.days{
+    font-size: 20px;
+    padding:5px 5px;
+    margin-top:10px;
+    margin-left:0px;
+    color:#e6e6e6;
+    text-decoration-line:none;
+}
+
+
+
+@keyframes posthoveranime {
+    0%{
+        background-color: rgb(97, 97, 97);
+        border-top:10px solid rgb(97, 97, 97);
+        border-left:10px solid rgb(97, 97, 97);
+        border-bottom:10px solid rgb(97, 97, 97);
+    }
+    100%{
+        background-color: rgb(150, 150, 150);
+        border-top:10px solid rgb(150, 150, 150);
+        border-left:10px solid rgb(150, 150, 150);
+        border-bottom:10px solid rgb(150, 150, 150);
+    }
+}
+@keyframes postunhoveranime {
+    0%{
+        background-color: rgb(150, 150, 150);
+        border-top:10px solid rgb(150, 150, 150);
+        border-left:10px solid rgb(150, 150, 150);
+        border-bottom:10px solid rgb(150, 150, 150);
+    }
+    100%{
+        background-color: rgb(97, 97, 97);
+        border-top:10px solid rgb(97, 97, 97);
+        border-left:10px solid rgb(97, 97, 97);
+        border-bottom:10px solid rgb(97, 97, 97);
+    }
+}
