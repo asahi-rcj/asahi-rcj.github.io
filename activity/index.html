@@ -17,13 +17,13 @@
 <body>
 <script>include_header();</script>
 <div class="wrapper">
-    <script>include_sidebar();</script>
-    <div class="main fadeUp delay-05s" id="content"></div>
+    <div class="main fadeUp delay-025s" id="content"></div>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script>
       axios.get('content.md').then(response => document.getElementById('content').innerHTML = marked.parse(response.data));
     </script>
+    <script>include_sidebar();</script>
 </div>
 <script>include_footer();</script>
 </body>

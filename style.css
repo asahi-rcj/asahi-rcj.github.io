@@ -15,7 +15,6 @@ body{
 
 /*ヘッダー*/
 #header{
-    z-index: 100;
     height:350px;
     background: linear-gradient(to bottom right, rgb(255, 255, 255) 20%, rgb(255, 174, 81) 50%, rgb(126, 167, 255));
     min-width: 100%;
@@ -52,6 +51,13 @@ img.logo{
     animation:HeaderhoverAnime 0.5s forwards;
 }
 
+.header li:focus-within{
+    border-right: 4px solid rgb(51, 51, 51);
+    border-bottom: 5px solid rgb(41, 41, 41);
+    background-color : rgb(70, 70, 70);
+    transform:translateY(3px);
+}
+
 @keyframes HeaderhoverAnime {
     0%{
         border-right: 4px solid rgb(75, 75, 75);
@@ -82,13 +88,6 @@ img.logo{
     }
 }
 
-.header li:focus-within{
-    border-right: 4px solid rgb(51, 51, 51);
-    border-bottom: 5px solid rgb(41, 41, 41);
-    background-color : rgb(70, 70, 70);
-    transform:translateY(3px);
-}
-
 .header li a{
     width:350px;
     height:50px;
@@ -96,6 +95,27 @@ img.logo{
     padding:5px 5px;
     color:#e6e6e6;
     text-decoration-line:none;
+}
+
+@media screen and (max-width:768px){
+    #header{
+        width:min-content;
+        height:550px;
+    }
+
+    img.logo{
+        width:min-content;
+    }
+
+    .headerlist{
+        width:min-content;
+        justify-content: center;
+    }
+    
+    .header li a{
+        width:1400px;
+        height:50px;
+    }
 }
 
 /*アコーディオン全体*/
@@ -201,12 +221,27 @@ img.logo{
 
 /*メイン部分*/
 .main{
+    font-size:20px;
     width: 75%;
-    margin-right:10px;
+    margin-left: 10px;
+    border-top: 10px solid rgb(201, 201, 201);
+    border-right: 10px solid rgb(201, 201, 201);
     border-left: 20px solid rgb(201, 201, 201);
+    border-bottom: 10px solid rgb(201, 201, 201);
     min-width: 700px;
     border-radius: 10px;
     background-color: rgb(201, 201, 201);
+}
+
+.newtweet{
+    float:left;
+    margin-left:5px;
+    border-left:10px solid rgb(145, 145, 145);
+    border-right:10px solid rgb(145, 145, 145);
+    border-bottom:10px solid rgb(145, 145, 145);
+    background-color:rgb(145, 145, 145);
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+    border-radius: 10px;;
 }
 
 /*汎用*/
@@ -230,4 +265,3 @@ img.logo{
     font-size:20px;
     text-align:center;
 }
-
