@@ -1,10 +1,44 @@
 @charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 
 body{
-    background: #444444;
+    font-family: 'Noto Sans Japanese', sans-serif;
+    background: #f5f5f5;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    width:100%;
 }
 
-.header{
-    color: #2b79d3;
-    font-size: 50px;
+.header li{
+    float: left;
+    box-sizing:border-box;
+    display:flex;
+    border-right: 4px solid rgb(75, 75, 75);
+    border-bottom: 5px solid rgb(65, 65, 65);
+    background-color : rgb(100, 100, 100);
+    list-style: none;
+    text-align:center;
+}
+
+.header li:hover{
+    border-right: 4px solid rgb(117, 117, 117);
+    border-bottom: 5px solid rgb(87, 87, 87);
+    background-color : rgb(165, 165, 165);
+}
+
+.header li:focus-within{
+    border-right: 4px solid rgb(51, 51, 51);
+    border-bottom: 5px solid rgb(41, 41, 41);
+    background-color : rgb(70, 70, 70);
+}
+
+.header li a{
+    width:250px;
+    height:50px;
+    font-size: 30px;
+    padding:5px 5px;
+    display:block;
+    color:#e6e6e6;
+    text-decoration-line:none;
 }
