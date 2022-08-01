@@ -1,6 +1,6 @@
 公開:2022/08/02 更新:2022/08/02 writer:あさひ([@asahi_robocuper](https://twitter.com/asahi_robocuper))
 # 初めてウェブサイトを作ってみたという話
-<img src="title.png" width="1280"> 
+<img src="title.png" class="postpic"> 
 
 ## 初めに
 > 初めましての人は初めまして。あさひです。  
