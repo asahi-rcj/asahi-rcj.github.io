@@ -2,7 +2,7 @@
 
 .fadeUp {
     animation-name: fadeUpAnime;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     animation-fill-mode:forwards;
     animation-timing-function:ease-out;
     opacity:0;
@@ -11,10 +11,10 @@
 @keyframes fadeUpAnime{
     from{
         opacity:0%;
-        transform:transalteY(200px);
+        transform: translateY(50px);
     }
     to{
         opacity:100%;
-        transform:transalteY(0px);
+        transform:translateY(0);
     }
 }
