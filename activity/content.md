@@ -1,5 +1,5 @@
 # 活動方針
-宗中アルテミスの活動方針について
+宗中アルテミスの活動方針についてまとめています。
 
 ## 目標
 ### 今季の全国大会へ向けたロボットの制作。
@@ -7,9 +7,9 @@
 
 ### チーム全体の技術力向上
 * ハードウェア、ソフトウェアの両方ともをチーム全体が把握し、誰もが修正・加筆できるようにする。
-* [Fusion 360](https://www.autodesk.co.jp/products/fusion-360/overview) や [KiCad](https://www.kicad.org/) などの部内に設置されている機械を使いこなし、後輩に繋いでいくのが最終目標。
+* [Fusion 360](https://www.autodesk.co.jp/products/fusion-360/overview) や [KiCad](https://www.kicad.org/) を駆使し、3DプリンタやCNCなどの部内に設置されている機械を使いこなし、後輩に繋いでいく。
 
-## ロボットの概要
+## 制作予定ロボットの概要
 ### 1号機(Artemis)
 * メインマイコン：TJ3B Loader 2620
 * サブマイコン：Seeeduino Xiao(ジャイロ制御用)
