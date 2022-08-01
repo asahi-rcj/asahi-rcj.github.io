@@ -34,6 +34,7 @@
 
 @media screen and (max-width:768px){
     .sidebar{
+        width: 0%;
         display:none;
     }
 }

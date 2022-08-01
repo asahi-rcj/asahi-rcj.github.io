@@ -17,7 +17,6 @@ body{
 #header{
     height:350px;
     background: linear-gradient(to bottom right, rgb(255, 255, 255) 20%, rgb(255, 174, 81) 50%, rgb(126, 167, 255));
-    min-width: 100%;
 }
 
 img.logo{
@@ -32,7 +31,7 @@ img.logo{
 
 .headerlist{
     width:100%;
-    min-width: 1200px;
+    min-width: 600px;
     display: flex;
     justify-content: center;
 }
@@ -233,6 +232,13 @@ img.logo{
     background-color: rgb(201, 201, 201);
 }
 
+@media screen and (max-width:768px){
+    .main{
+        min-width: 1470px;
+        font-size:50px;
+    }
+}
+
 .newtweet{
     float:left;
     margin-right:20px;
@@ -301,8 +307,6 @@ img.logo{
     animation:newtweethoveranime 0.3s forwards;
 }
 
-.new
-
 /*汎用*/
 .mgn-10{
     margin-left: 10px;
@@ -323,4 +327,15 @@ img.logo{
     display:block;
     font-size:20px;
     text-align:center;
+}
+
+@media screen and (max-width:768px){
+    .footer{
+        width:400%;
+        min-height:100px;
+        font-size:50px;
+    }
+    .footer #copyright{
+        font-size:40px;
+    }
 }
