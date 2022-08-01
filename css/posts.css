@@ -38,7 +38,34 @@
     text-decoration-line:none;
 }
 
-
+@media screen and (max-width:768px){
+    .postslist li a{
+        font-size: 60px;
+        padding:5px 5px;
+        margin-top:-5px;
+        margin-left:10px;
+        margin-right:10px;
+        color:#e6e6e6;
+        text-decoration-line:none;
+    }
+    
+    .postslist li a p{
+        font-size: 40px;
+        padding:5px 5px;
+        margin-left:20px;
+        color:#e6e6e6;
+        text-decoration-line:none;
+    }
+    
+    .postslist li a p.days{
+        font-size: 40px;
+        padding:5px 5px;
+        margin-top:10px;
+        margin-left:0px;
+        color:#e6e6e6;
+        text-decoration-line:none;
+    }
+}
 
 @keyframes posthoveranime {
     0%{

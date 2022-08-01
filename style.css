@@ -99,7 +99,7 @@ img.logo{
 @media screen and (max-width:768px){
     #header{
         width:min-content;
-        height:550px;
+        height:770px;
     }
 
     img.logo{
@@ -111,9 +111,14 @@ img.logo{
         justify-content: center;
     }
     
+    .header li{
+        border-radius: 30px;
+    }
+
     .header li a{
+        font-size: 65px;
         width:1400px;
-        height:50px;
+        height:100px;
     }
 }
 
@@ -332,6 +337,10 @@ img.logo{
     text-align:center;
 }
 
+.article{
+    font-size:20px;
+}
+
 @media screen and (max-width:768px){
     .footer{
         width:400%;
@@ -340,5 +349,9 @@ img.logo{
     }
     .footer #copyright{
         font-size:40px;
+    }
+    .article{
+        font-size: 60px;
+        display: inline-block;
     }
 }
