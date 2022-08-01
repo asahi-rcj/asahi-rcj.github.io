@@ -2,14 +2,14 @@
 @import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 
 body{
-    overflow:scroll;
-    overflow-x:visible;
+    overflow-y:scroll;
     font-family: 'Noto Sans Japanese', sans-serif;
     background: #e4e4e4;
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
     width:100%;
+    height:100%;
     margin:0;
 }
 
@@ -18,7 +18,6 @@ body{
     z-index: 100;
     height:350px;
     background: linear-gradient(to bottom right, rgb(255, 255, 255) 20%, rgb(255, 174, 81) 50%, rgb(126, 167, 255));
-    width:max-content;
     min-width: 100%;
 }
 
@@ -91,7 +90,7 @@ img.logo{
 }
 
 .header li a{
-    width: 250px;
+    width:350px;
     height:50px;
     font-size: 30px;
     padding:5px 5px;
@@ -99,47 +98,12 @@ img.logo{
     text-decoration-line:none;
 }
 
-/*メインラッパー*/
-.wrapper{
-    display:flex;
-}
-
-/*サイドバー*/
-.sidebar{
-    width: 15%;
-    min-width: 350px;
-    margin-left:30px;
-    border-radius: 10px;
-    background-color: #b1b1b1;
-    box-sizing:border-box;
-}
-
-.sidebar h1{
-    margin: 5px 0 0 20px;
-}
-
-.sidebar img.teammember{
-    margin-top:10px;
-    border-radius: 50px;
-    width: 100px;
-}
-
-.sidebar a{
-    font-size:15px;
-}
-
-.sidebar .memberdetail{
-    display:inline-block;
-    margin-left: 12px;
-    line-height: 10px;
-}
-
 /*アコーディオン全体*/
 .accordion-area{
     list-style: none;
     margin-left:-33px;
-    width: 96%;
-    max-width: 900px;
+    max-width: 90%;
+    min-width: 80%
 }
 
 .accordion-area section {
@@ -178,7 +142,7 @@ img.logo{
 }
 
 /*アコーディオンタイトル*/
-.title {
+.sidebar .title {
     position: relative;/*+マークの位置基準とするためrelative指定*/
     cursor: pointer;
     font-size:20px;
@@ -186,8 +150,8 @@ img.logo{
 }
 
 /*アイコンの＋と×*/
-.title::before,
-.title::after{
+.sidebar .title::before,
+.sidebar .title::after{
     position: absolute;
     content:'';
     width: 15px;
@@ -209,7 +173,7 @@ img.logo{
 }
 
 /*　closeというクラスがついたら形状変化　*/
-.title.close::before{
+.sidebar .title.close::before{
 	transform: rotate(45deg);
 }
 
@@ -219,6 +183,7 @@ img.logo{
 
 /*アコーディオンで現れるエリア*/
 .box {
+    cursor: pointer;
     display: none;/*はじめは非表示*/
     background: #e6e6e6;
     border-bottom : 3px solid rgb(172, 172, 172);
@@ -228,18 +193,41 @@ img.logo{
     padding: 3%;
 }
 
+/*メインラッパー*/
 .wrapper{
+    display:flex;
     padding-top:30px;
 }
 
 /*メイン部分*/
 .main{
-    width: 85%;
-    margin-left:20px;
+    width: 75%;
+    margin-right:10px;
+    border-left: 20px solid rgb(201, 201, 201);
     min-width: 700px;
+    border-radius: 10px;
+    background-color: rgb(201, 201, 201);
 }
 
 /*汎用*/
 .mgn-10{
     margin-left: 10px;
 }
+
+/*フッター*/
+.footer{
+    margin-top:20px;
+    border-bottom:10px;
+    width:100%;
+    min-height:50px;
+    color:#e4e4e4;
+    background-color: rgb(48, 48, 48);
+}
+
+.footer #copyright{
+    float:inherit;
+    display:block;
+    font-size:20px;
+    text-align:center;
+}
+
