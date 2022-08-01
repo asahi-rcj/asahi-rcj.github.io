@@ -3,7 +3,7 @@
 
 body{
     font-family: 'Noto Sans Japanese', sans-serif;
-    background: #f5f5f5;
+    background: #e4e4e4;
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
@@ -11,21 +11,24 @@ body{
 }
 
 /*ヘッダー*/
-.header img.logo{
+img.logo{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 20px;
     width:80%;
-    min-width:800px;
+    min-width:1200px;
 }
 
 .headerlist{
     width:100%;
+    min-width: 1200px;
     display: flex;
     justify-content: center;
 }
 
 .header li{
+    border-radius: 15px;
     float:left;
     box-sizing:border-box;
     display:flex;
@@ -47,7 +50,7 @@ body{
     border-right: 4px solid rgb(51, 51, 51);
     border-bottom: 5px solid rgb(41, 41, 41);
     background-color : rgb(70, 70, 70);
-    transform:translateY(5px);
+    transform:translateY(3px);
 }
 
 .header li a{
@@ -68,18 +71,18 @@ body{
 .sidebar{
     width: 15%;
     min-width: 350px;
-    border-bottom: 10px solid #b1b1b1;
-    border-radius:10px;
+    margin-left:30px;
+    border-bottom: 20px solid #b1b1b1;
+    border-radius: 10px;
     background-color: #b1b1b1;
     box-sizing:border-box;
 }
 
 .sidebar h1{
-    margin: 0px 0 0 10px;
+    margin: 5px 0 0 20px;
 }
 
 .sidebar img.teammember{
-    margin-left:10px;
     margin-top:10px;
     border-radius: 50px;
     width: 100px;
@@ -91,14 +94,81 @@ body{
 
 .sidebar .memberdetail{
     display:inline-block;
-    margin-left:12px;
+    margin-left: 12px;
     line-height: 10px;
+}
+
+/*アコーディオン全体*/
+.accordion-area{
+    list-style: none;
+    margin-left:-33px;
+    width: 96%;
+    max-width: 900px;
+}
+
+.accordion-area section {
+    background-color:rgb(189, 189, 189);
+    border-bottom : 3px solid rgb(134, 134, 134);
+    border-right : 3px solid rgb(134, 134, 134);
+    border-radius: 10px;
+}
+
+/*アコーディオンタイトル*/
+.title {
+    position: relative;/*+マークの位置基準とするためrelative指定*/
+    cursor: pointer;
+    font-size:20px;
+    padding: 3% 50px;
+}
+
+/*アイコンの＋と×*/
+.title::before,
+.title::after{
+    position: absolute;
+    content:'';
+    width: 15px;
+    height: 2px;
+    background-color: #333;
+    border-radius: 10px;
+}
+.title::before{
+    top:48%;
+    left: 15px;
+    transform: rotate(0deg);
+    
+}
+.title::after{    
+    top:48%;
+    left: 15px;
+    transform: rotate(90deg);
+
+}
+
+/*　closeというクラスがついたら形状変化　*/
+.title.close::before{
+	transform: rotate(45deg);
+}
+
+.title.close::after{
+	transform: rotate(-45deg);
+}
+
+/*アコーディオンで現れるエリア*/
+.box {
+    display: none;/*はじめは非表示*/
+    background: #e6e6e6;
+    border-bottom : 3px solid rgb(172, 172, 172);
+    border-right : 3px solid rgb(202, 202, 202);
+    border-radius: 10px;
+	margin:0 3% 3% 3%;
+    padding: 3%;
 }
 
 /*メイン部分*/
 .main{
-    width: 100%;
+    width: 85%;
     margin-left:20px;
+    min-width: 700px;
 }
 
 /*汎用*/

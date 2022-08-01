@@ -1,11 +1,60 @@
 @charset "utf-8";
 
-.fadeUp {
-    animation-name: fadeUpAnime;
-    animation-duration: 1.5s;
+.fade{
+    animation-name: fadeAnime;
+    animation-duration: 2.0s;
     animation-fill-mode:forwards;
     animation-timing-function:ease-out;
     opacity:0;
+}
+
+.fadeUp {
+    animation-name: fadeUpAnime;
+    animation-duration: 1.0s;
+    animation-fill-mode:forwards;
+    animation-timing-function:ease-out;
+    opacity:0;
+}
+
+.delay-025s{
+    animation-delay:0.25s;
+}
+
+.delay-05s{
+    animation-delay:0.5s;
+}
+
+.delay-075s{
+    animation-delay:0.75s;
+}
+
+.delay-1s{
+    animation-delay:1s;
+}
+
+.duration-025s{
+    animation-duration:0.25s;
+}
+
+.duration-05s{
+    animation-duration:0.5s;
+}
+
+.duration-075s{
+    animation-duration:0.75s;
+}
+
+.duration-1s{
+    animation-duration:1.0s;
+}
+
+@keyframes fadeAnime{
+    from{
+        opacity:0%;
+    }
+    to{
+        opacity:100%;
+    }
 }
 
 @keyframes fadeUpAnime{
