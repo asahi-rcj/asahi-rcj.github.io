@@ -10,6 +10,7 @@ body{
     width:100%;
 }
 
+/*ヘッダー*/
 .header img.logo{
     display: block;
     margin-left: auto;
@@ -54,28 +55,53 @@ body{
     height:50px;
     font-size: 30px;
     padding:5px 5px;
-    display:block;
     color:#e6e6e6;
     text-decoration-line:none;
 }
 
+/*メインラッパー*/
+.wrapper{
+    display:flex;
+}
+
+/*サイドバー*/
 .sidebar{
     width: 15%;
-    min-width: 300px;
-    border-radius:5px;
+    min-width: 350px;
+    border-bottom: 10px solid #b1b1b1;
+    border-radius:10px;
     background-color: #b1b1b1;
     box-sizing:border-box;
 }
 
-.sidebar h2{
+.sidebar h1{
     margin: 0px 0 0 10px;
 }
 
+.sidebar img.teammember{
+    margin-left:10px;
+    margin-top:10px;
+    border-radius: 50px;
+    width: 100px;
+}
+
+.sidebar a{
+    font-size:15px;
+}
+
+.sidebar .memberdetail{
+    display:inline-block;
+    margin-left:12px;
+    line-height: 10px;
+}
+
+/*メイン部分*/
 .main{
-    width: 85%;
+    width: 100%;
     margin-left:20px;
 }
 
-.wrapper{
-    display:flex;
+/*汎用*/
+.mgn-10{
+    margin-left: 10px;
 }
