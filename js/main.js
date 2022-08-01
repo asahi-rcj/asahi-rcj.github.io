@@ -6,3 +6,12 @@ function include_header(){
         document.write(header_html);
     });
 }
+
+function include_sidebar(){
+    $.ajax({
+        url: 'includes/sidebar.html',
+        async: false,
+    }).done(function(sidebar_html){
+        document.write(sidebar_html);
+    });
+}

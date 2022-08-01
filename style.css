@@ -10,8 +10,22 @@ body{
     width:100%;
 }
 
+.header img.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:80%;
+    min-width:800px;
+}
+
+.headerlist{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+
 .header li{
-    float: left;
+    float:left;
     box-sizing:border-box;
     display:flex;
     border-right: 4px solid rgb(75, 75, 75);
@@ -25,20 +39,43 @@ body{
     border-right: 4px solid rgb(117, 117, 117);
     border-bottom: 5px solid rgb(87, 87, 87);
     background-color : rgb(165, 165, 165);
+    transform:translateY(1px);
 }
 
 .header li:focus-within{
     border-right: 4px solid rgb(51, 51, 51);
     border-bottom: 5px solid rgb(41, 41, 41);
     background-color : rgb(70, 70, 70);
+    transform:translateY(5px);
 }
 
 .header li a{
-    width:250px;
+    width: 250px;
     height:50px;
     font-size: 30px;
     padding:5px 5px;
     display:block;
     color:#e6e6e6;
     text-decoration-line:none;
+}
+
+.sidebar{
+    width: 15%;
+    min-width: 300px;
+    border-radius:5px;
+    background-color: #b1b1b1;
+    box-sizing:border-box;
+}
+
+.sidebar h2{
+    margin: 0px 0 0 10px;
+}
+
+.main{
+    width: 85%;
+    margin-left:20px;
+}
+
+.wrapper{
+    display:flex;
 }

@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+.fadeUp {
+    animation-name: fadeUpAnime;
+    animation-duration: 2s;
+    animation-fill-mode:forwards;
+    opacity:0;
+}
+
+@keyframes fadeUpAnime{
+    from{
+        opacity:0%;
+        transform:transalteY(100px);
+    }
+    to{
+        opacity:100%;
+        transform:transalteY(0px);
+    }
+}
