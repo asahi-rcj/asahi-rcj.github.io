@@ -29,3 +29,12 @@ function include_sidebar(){
         document.write(sidebar_html);
     });
 }
+
+function include_footer(){
+    $.ajax({
+        url: '../includes/footer.html',
+        async: false,
+    }).done(function(footer_html){
+        document.write(footer_html);
+    });
+}

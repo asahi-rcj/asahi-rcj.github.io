@@ -1,3 +1,9 @@
+$(window).on('load', function () {
+	var findElm = $('.title').next(".box");//直後のアコーディオンを行うエリアを取得し
+	$(findElm).slideToggle();//アコーディオンの上下動作
+    $('.title').addClass('close');
+});
+
 //アコーディオンをクリックした時の動作
 $('.title').on('click', function() {//タイトル要素をクリックしたら
 	var findElm = $(this).next(".box");//直後のアコーディオンを行うエリアを取得し
