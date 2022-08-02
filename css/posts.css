@@ -125,12 +125,12 @@
     width: 75%;
     min-width: 700px;
     margin-left:20%;
-    background-color: rgb(224, 224, 224);
-    border-top: 10px solid rgb(224, 224, 224);
-    border-right: 15px solid rgb(224, 224, 224);
-    border-left: 25px solid rgb(224, 224, 224);
-    border-bottom: 10px solid rgb(224, 224, 224);
-    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .1);
+    background-color: rgb(245, 245, 245);
+    border-top: 10px solid rgb(245, 245, 245);
+    border-right: 15px solid rgb(245, 245, 245);
+    border-left: 25px solid rgb(245, 245, 245);
+    border-bottom: 10px solid rgb(245, 245, 245);
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .2);
     border-radius: 10px;
 }
 

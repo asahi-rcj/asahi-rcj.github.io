@@ -4,7 +4,7 @@
 body{
     overflow-y:scroll;
     font-family: 'Noto Sans Japanese', sans-serif;
-    background: #e4e4e4;
+    background: #ffffff;
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
@@ -222,22 +222,24 @@ img.logo{
 
 /*メインラッパー*/
 .wrapper{
+    width:100%;
     display:flex;
     padding-top:30px;
 }
 
 /*メイン部分*/
 .main{
-    font-size:20px;
+    font-size:23px;
     width: 75%;
     margin-left: 10px;
-    border-top: 10px solid rgb(201, 201, 201);
-    border-right: 10px solid rgb(201, 201, 201);
-    border-left: 20px solid rgb(201, 201, 201);
-    border-bottom: 10px solid rgb(201, 201, 201);
+    background-color: rgb(245, 245, 245);
+    border-top: 10px solid rgb(245, 245, 245);
+    border-right: 10px solid rgb(245, 245, 245);
+    border-left: 20px solid rgb(245, 245, 245);
+    border-bottom: 10px solid rgb(245, 245, 245);
     min-width: 700px;
     border-radius: 10px;
-    background-color: rgb(201, 201, 201);
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.4);
 }
 
 @media screen and (max-width:768px){
