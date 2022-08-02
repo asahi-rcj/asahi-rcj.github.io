@@ -339,10 +339,6 @@ img.logo{
     text-align:center;
 }
 
-.article{
-    font-size:20px;
-}
-
 @media screen and (max-width:768px){
     .footer{
         width:400%;
@@ -351,9 +347,5 @@ img.logo{
     }
     .footer #copyright{
         font-size:40px;
-    }
-    .article{
-        font-size: 60px;
-        display: inline-block;
     }
 }

@@ -1,3 +1,8 @@
+window.onload = function() {
+  const spinner = document.getElementById('loading');
+  spinner.classList.add('loaded');
+}
+
 var slider;
 var sliderFlag = false;
 var breakpoint = 768;//768px以下の場合
@@ -18,15 +23,6 @@ function sliderSet() {
 
 $(window).on('load resize', function() {
         sliderSet();
-});
-
-$(window).on('load', function() {
-    const spinner = document.getElementById('loading');
-    spinner.classList.add('loaded');
-    
-    var $widget = $('iframe.twitter-timeline');
-    var $widgetContents = $widget.contents();
-    $widgetContents.find('head').append('<link href="./assets/css/tw.css" rel="stylesheet" type="text/css">');
 });
 
 function include_loading(){
