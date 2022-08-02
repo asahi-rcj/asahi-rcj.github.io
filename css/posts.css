@@ -4,6 +4,7 @@
     list-style: none;
     margin-bottom:10px;
     border-radius: 10px;
+    text-decoration-line:none;
     animation:postunhoveranime 0.5s forwards;
     box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
 }
@@ -11,10 +12,6 @@
 .postslist a:hover{
     list-style: none;
     animation:posthoveranime 0.5s forwards;
-}
-
-.postslist a{
-    text-decoration-line:none;
 }
 
 .postslist a li{
@@ -58,7 +55,13 @@
 }
 
 @media screen and (max-width:768px){
+    .postslist a{
+        display:block;
+        border-radius: 30px;
+    }
+
     .postslist a li{ 
+        width: 98%;
         font-size: 90px;
         padding:5px 5px;
         margin-top:-5px;
@@ -84,7 +87,15 @@
         color:#e6e6e6;
         text-decoration-line:none;
     }
+
+    .postslist a img{
+        width:98%;
+        margin-right:2%;
+        box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+        animation:postslistpicunhover 0.3s forwards;
+    }
 }
+
 .postslist ul a li .postspic{
     display: grid;
     justify-content: right;
