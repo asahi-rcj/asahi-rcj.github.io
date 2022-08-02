@@ -18,6 +18,7 @@
 }
 
 .postslist a li{
+    width: 75%;
     font-size: 35px;
     padding:5px 5px;
     margin-top:-5px;
@@ -40,6 +41,20 @@
     margin-left:0px;
     color:#e6e6e6;
     text-decoration-line:none;
+}
+
+.postslist a img{
+    width:25%;
+    margin-right:2%;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+    animation:postslistpicunhover 0.3s forwards;
+}
+
+.postslist a img:hover{
+    width:25%;
+    margin-right:2%;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+    animation:postslistpichover 0.3s forwards;
 }
 
 @media screen and (max-width:768px){
@@ -126,18 +141,18 @@
         border-bottom:10px solid rgb(78, 78, 78);
     }
     100%{
-        background-color: rgb(150, 150, 150);
-        border-top:10px solid rgb(150, 150, 150);
-        border-left:10px solid rgb(150, 150, 150);
-        border-bottom:10px solid rgb(150, 150, 150);
+        background-color: rgb(116, 116, 116);
+        border-top:10px solid rgb(116, 116, 116);
+        border-left:10px solid rgb(116, 116, 116);
+        border-bottom:10px solid rgb(116, 116, 116);
     }
 }
 @keyframes postunhoveranime {
     0%{
-        background-color: rgb(150, 150, 150);
-        border-top:10px solid rgb(150, 150, 150);
-        border-left:10px solid rgb(150, 150, 150);
-        border-bottom:10px solid rgb(150, 150, 150);
+        background-color: rgb(116, 116, 116);
+        border-top:10px solid rgb(116, 116, 116);
+        border-left:10px solid rgb(116, 116, 116);
+        border-bottom:10px solid rgb(116, 116, 116);
     }
     100%{
         background-color: rgb(78, 78, 78);
@@ -146,7 +161,6 @@
         border-bottom:10px solid rgb(78, 78, 78);
     }
 }
-
 
 @keyframes postpichover {
     0%{
