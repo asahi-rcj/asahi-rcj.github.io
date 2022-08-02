@@ -130,7 +130,10 @@
 
 @media screen and (max-width:768px){
     .article{
+        min-width: 385%;
         font-size: 60px;
+        line-height: 200%;
+        margin-left:10px;
         display: inline-block;
     }    
 }
