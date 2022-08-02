@@ -68,6 +68,53 @@
         text-decoration-line:none;
     }
 }
+.postslist ul li .postspic{
+    display: grid;
+    justify-content: right;
+    width:20%;
+    min-height:auto;
+    align-items: center;
+}
+
+.postpic{
+    width:100%;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom:30px;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 1);
+    animation:postpicunhover 0.3s forwards;
+}
+
+.postpic:hover{
+    transform:scale(1.05);
+    animation:postpichover 0.3s forwards;
+}
+
+.article{
+    z-index:2;
+    font-size:23px;
+    line-height: 200%;
+    width: 75%;
+    min-width: 700px;
+    margin-left:20%;
+    background-color: rgb(224, 224, 224);
+    border-top: 10px solid rgb(224, 224, 224);
+    border-right: 15px solid rgb(224, 224, 224);
+    border-left: 25px solid rgb(224, 224, 224);
+    border-bottom: 10px solid rgb(224, 224, 224);
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .1);
+    border-radius: 10px;
+}
+
+@media screen and (max-width:768px){
+    .article{
+        min-width: 385%;
+        font-size: 60px;
+        line-height: 200%;
+        margin-left:10px;
+        display: inline-block;
+    }    
+}
 
 @keyframes posthoveranime {
     0%{
@@ -98,42 +145,21 @@
     }
 }
 
-.postslist ul li .postspic{
-    display: grid;
-    justify-content: right;
-    width:20%;
-    min-height:auto;
-    align-items: center;
+
+@keyframes postpichover {
+    0%{
+        transform:scale(1.0);
+    }
+    100%{
+        transform:scale(1.02);
+    }
 }
 
-.postpic{
-    width:100%;
-    border-radius: 5px;
-    margin-bottom:30px;
-    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 1);
-}
-
-.article{
-    font-size:23px;
-    line-height: 36px;
-    width: 75%;
-    min-width: 700px;
-    margin-left:400px;
-    background-color: rgb(224, 224, 224);
-    border-top: 10px solid rgb(224, 224, 224);
-    border-right: 15px solid rgb(224, 224, 224);
-    border-left: 25px solid rgb(224, 224, 224);
-    border-bottom: 10px solid rgb(224, 224, 224);
-    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .1);
-    border-radius: 10px;
-}
-
-@media screen and (max-width:768px){
-    .article{
-        min-width: 385%;
-        font-size: 60px;
-        line-height: 200%;
-        margin-left:10px;
-        display: inline-block;
-    }    
+@keyframes postpicunhover {
+    0%{
+        transform:scale(1.02);
+    }
+    100%{
+        transform:scale(1.0);
+    }
 }

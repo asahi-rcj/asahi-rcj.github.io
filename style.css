@@ -15,7 +15,7 @@ body{
 
 /*ヘッダー*/
 #header{
-    height:350px;
+    height:30%;
     background: linear-gradient(to bottom right, rgb(255, 255, 255) 20%, rgb(255, 174, 81) 50%, rgb(126, 167, 255));
 }
 
@@ -349,16 +349,14 @@ img.logo{
     margin-right:15px;
 }
 
-.commentfield .comfieldtitle{
-    margin-left:650px;
-}
-
 .commentfield h1{
+    text-align: center;
     padding-top:20px;
     color:rgb(49, 49, 49);
 }
 
 .commentfield h2{
+    text-align: center;
     margin-left:50px;
     color:rgb(49, 49, 49);
 }
