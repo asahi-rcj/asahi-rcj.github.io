@@ -20,6 +20,8 @@ body{
 }
 
 img.logo{
+    max-height:220px;
+    max-width:1500px;
     padding:10px;
     display: block;
     margin-left: auto;
@@ -271,21 +273,21 @@ img.logo{
         color:white;
     }
     100%{
-        background-color:rgb(150, 150, 150);
-        border-left:20px solid rgb(150, 150, 150);
-        border-right:20px solid rgb(150, 150, 150);
-        border-bottom:10px solid rgb(150, 150, 150);
-        color:black;
+        background-color:rgb(177, 177, 177);
+        border-left:20px solid rgb(177, 177, 177);
+        border-right:20px solid rgb(177, 177, 177);
+        border-bottom:10px solid rgb(177, 177, 177);
+        color:rgb(65, 65, 65);
     }
 }
 
 @keyframes newtweetunhoveranime {
     0%{
-        background-color:rgb(150, 150, 150);
-        border-left:20px solid rgb(150, 150, 150);
-        border-right:20px solid rgb(150, 150, 150);
-        border-bottom:10px solid rgb(150, 150, 150);
-        color:black;
+        background-color:rgb(177, 177, 177);
+        border-left:20px solid rgb(177, 177, 177);
+        border-right:20px solid rgb(177, 177, 177);
+        border-bottom:10px solid rgb(177, 177, 177);
+        color:rgb(65, 65, 65);
     }
     100%{
         background-color:rgb(58, 58, 58);
