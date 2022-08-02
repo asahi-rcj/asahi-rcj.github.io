@@ -13,6 +13,10 @@ body{
     margin:0;
 }
 
+a{
+    text-decoration-line:none;
+}
+
 /*ヘッダー*/
 #header{
     height:30%;
@@ -95,7 +99,6 @@ img.logo{
     font-size: 30px;
     padding:5px 5px;
     color:#e6e6e6;
-    text-decoration-line:none;
 }
 
 @media screen and (max-width:768px){
@@ -250,6 +253,7 @@ img.logo{
 }
 
 .newtweet{
+    width:30%;
     float:left;
     margin-right:20px;
     margin-bottom:20px;
@@ -302,6 +306,7 @@ img.logo{
 }
 
 .newnews{
+    width:60%;
     float:left;
     border-left:20px solid rgb(145, 145, 145);
     border-right:20px solid rgb(145, 145, 145);
@@ -309,12 +314,16 @@ img.logo{
     background-color:rgb(145, 145, 145);
     box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
     border-radius: 10px;
-    color:white;
+    color:#e6e6e6;
     animation:newtweetunhoveranime 0.3s forwards;
 }
 
 .newnews:hover{
     animation:newtweethoveranime 0.3s forwards;
+}
+
+.newnews a{
+    color:#e6e6e6;
 }
 
 /*汎用*/
