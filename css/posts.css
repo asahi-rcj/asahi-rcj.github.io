@@ -1,37 +1,39 @@
-.postslist li{
+.postslist a{
     width:98%;
     display:flex;
     list-style: none;
     margin-bottom:10px;
     border-radius: 10px;
     animation:postunhoveranime 0.5s forwards;
-        box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
 }
 
-.postslist li:hover{
+.postslist a:hover{
     list-style: none;
     animation:posthoveranime 0.5s forwards;
 }
 
-.postslist li a{
+.postslist a{
+    text-decoration-line:none;
+}
+
+.postslist a li{
     font-size: 35px;
     padding:5px 5px;
     margin-top:-5px;
     margin-left:10px;
     margin-right:10px;
     color:#e6e6e6;
-    text-decoration-line:none;
 }
 
-.postslist li a p{
+.postslist a li p{
     font-size: 20px;
     padding:5px 5px;
     margin-left:20px;
     color:#e6e6e6;
-    text-decoration-line:none;
 }
 
-.postslist li a p.days{
+.postslist a li p.days{
     font-size: 20px;
     padding:5px 5px;
     margin-top:10px;
@@ -41,7 +43,7 @@
 }
 
 @media screen and (max-width:768px){
-    .postslist li a{
+    .postslist a li{ 
         font-size: 90px;
         padding:5px 5px;
         margin-top:-5px;
@@ -51,7 +53,7 @@
         text-decoration-line:none;
     }
     
-    .postslist li a p{
+    .postslist a li p{
         font-size: 60px;
         padding:5px 5px;
         margin-left:20px;
@@ -59,7 +61,7 @@
         text-decoration-line:none;
     }
     
-    .postslist li a p.days{
+    .postslist a li p.days{
         font-size: 55px;
         padding:5px 5px;
         margin-top:10px;
@@ -68,7 +70,7 @@
         text-decoration-line:none;
     }
 }
-.postslist ul li .postspic{
+.postslist ul a li .postspic{
     display: grid;
     justify-content: right;
     width:20%;
