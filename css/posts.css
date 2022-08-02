@@ -42,7 +42,7 @@
 
 @media screen and (max-width:768px){
     .postslist li a{
-        font-size: 60px;
+        font-size: 90px;
         padding:5px 5px;
         margin-top:-5px;
         margin-left:10px;
@@ -52,7 +52,7 @@
     }
     
     .postslist li a p{
-        font-size: 40px;
+        font-size: 60px;
         padding:5px 5px;
         margin-left:20px;
         color:#e6e6e6;
@@ -60,7 +60,7 @@
     }
     
     .postslist li a p.days{
-        font-size: 40px;
+        font-size: 55px;
         padding:5px 5px;
         margin-top:10px;
         margin-left:0px;
