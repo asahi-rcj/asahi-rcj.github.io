@@ -400,4 +400,12 @@ img.logo{
         margin-left:-500px;
         color:rgb(49, 49, 49);
     }
+    .newtweet{
+        width:96%;
+        border-radius: 30px;
+    }
+    .newnews{
+        width:96%;
+        border-radius: 30px;
+    }
 }
