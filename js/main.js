@@ -60,3 +60,12 @@ function include_footer(){
         document.write(footer_html);
     });
 }
+
+function include_commentfield(){
+    $.ajax({
+        url: '../../includes/commentfield.html',
+        async: false,
+    }).done(function(comfield_html){
+        document.write(comfield_html);
+    });
+}

@@ -32,6 +32,15 @@
     animation-delay:1s;
 }
 
+.delay-125s{
+    animation-delay:1.25s;
+}
+
+.delay-15s{
+    animation-delay:1.5s;
+}
+
+
 .duration-025s{
     animation-duration:0.25s;
 }

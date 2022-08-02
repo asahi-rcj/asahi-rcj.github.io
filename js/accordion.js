@@ -13,7 +13,7 @@ $('.title').on('click', function() {//タイトル要素をクリックしたら
 $('.box').on('click', function() {//タイトル要素をクリックしたら
 	$(this).slideToggle();//アコーディオンの上下動作
     
-	var findElm = $(this).back(".title");//直後のアコーディオンを行うエリアを取得し
+	var findElm = $(this).prev(".title");//直後のアコーディオンを行うエリアを取得し
 	if($(findElm).hasClass('close')){//タイトル要素にクラス名closeがあれば
 		$(findElm).removeClass('close');//クラス名を除去し
 	}else{//それ以外は

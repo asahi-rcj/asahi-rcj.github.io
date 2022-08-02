@@ -4,10 +4,10 @@
     max-width: 450px;
     min-width: 300px;
     margin:0px 15px 0px 20px;
-    border-left:10px solid #b1b1b1;
-    border-bottom:10px solid #b1b1b1;
+    border-left:10px solid #dadada;
+    border-bottom:10px solid #dadada;
     border-radius: 10px;
-    background-color: #b1b1b1;
+    background-color: #dadada;
     display:block;
 }
 
