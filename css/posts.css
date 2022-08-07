@@ -46,13 +46,6 @@
     animation:postslistpicunhover 0.3s forwards;
 }
 
-.postslist a img:hover{
-    width:25%;
-    margin-right:2%;
-    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
-    animation:postslistpichover 0.3s forwards;
-}
-
 @media screen and (max-width:768px){
     h1{
         margin-top:0%;
