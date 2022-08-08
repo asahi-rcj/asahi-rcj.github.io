@@ -151,27 +151,27 @@ img.logo{
 
 @keyframes accordionhoveranime {
     0%{
-        background-color:rgb(211, 211, 211);
-        border-bottom : 3px solid rgb(211, 211, 211);
-        border-right : 3px solid rgb(211, 211, 211);
+        background-color:rgb(230, 230, 230);
+        border-bottom : 3px solid rgb(230, 230, 230);
+        border-right : 3px solid rgb(230, 230, 230);
     }
     100%{
-        background-color:rgb(228, 228, 228);
-        border-bottom : 3px solid rgb(228, 228, 228);
-        border-right : 3px solid rgb(228, 228, 228);
+        background-color:rgb(240, 240, 240);
+        border-bottom : 3px solid rgb(240, 240, 240);
+        border-right : 3px solid rgb(240, 240, 240);
     }
 }
 
 @keyframes accordionunhoveranime {
     0%{
-        background-color:rgb(228, 228, 228);
-        border-bottom : 3px solid rgb(228, 228, 228);
-        border-right : 3px solid rgb(228, 228, 228);
+        background-color:rgb(240, 240, 240);
+        border-bottom : 3px solid rgb(240, 240, 240);
+        border-right : 3px solid rgb(240, 240, 240);
     }
     100%{
-        background-color:rgb(211, 211, 211);
-        border-bottom : 3px solid rgb(211, 211, 211);
-        border-right : 3px solid rgb(211, 211, 211);
+        background-color:rgb(230, 230, 230);
+        border-bottom : 3px solid rgb(230, 230, 230);
+        border-right : 3px solid rgb(230, 230, 230);
     }
 }
 
@@ -241,12 +241,28 @@ img.logo{
     margin-left: 10px;
     background-color: rgb(245, 245, 245);
     border-top: 10px solid rgb(245, 245, 245);
-    border-right: 10px solid rgb(245, 245, 245);
-    border-left: 20px solid rgb(245, 245, 245);
+    border-right: 15px solid rgb(245, 245, 245);
+    border-left: 25px solid rgb(245, 245, 245);
     border-bottom: 10px solid rgb(245, 245, 245);
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .2);
     min-width: 400px;
     border-radius: 10px;
-    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.4);
+}
+
+.article{
+    z-index:2;
+    font-size:23px;
+    line-height: 200%;
+    width: 75%;
+    min-width: 700px;
+    margin-left:20%;
+    background-color: rgb(245, 245, 245);
+    border-top: 10px solid rgb(245, 245, 245);
+    border-right: 15px solid rgb(245, 245, 245);
+    border-left: 25px solid rgb(245, 245, 245);
+    border-bottom: 10px solid rgb(245, 245, 245);
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .2);
+    border-radius: 10px;
 }
 
 @media screen and (max-width:768px){
