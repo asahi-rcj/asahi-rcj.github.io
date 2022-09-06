@@ -299,7 +299,8 @@ img.logo{
 .main{
     font-size:23px;
     width: 75%;
-    margin-left: 10px;
+    margin-left: 3px;
+    margin-right: 10px;
     background-color: rgb(245, 245, 245);
     border-top: 10px solid rgb(245, 245, 245);
     border-right: 15px solid rgb(245, 245, 245);
@@ -428,12 +429,25 @@ img.logo{
 }
 
 .footer #copyright{
+    margin:0;
+    padding-bottom: 10px;
     float:inherit;
     display:block;
     font-size:20px;
     text-align:center;
 }
 
+.footer li{
+    padding-top:10px;
+    display:center;
+    list-style: none;
+    text-align:center;
+}
+
+.footer li a{
+    font-size: 20px;
+    color:#e6e6e6;
+}
 
 .commentfield{
     border-radius: 60px;
