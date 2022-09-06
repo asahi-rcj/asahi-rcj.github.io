@@ -15,8 +15,11 @@ a{
     text-decoration-line:none;
 }
 
-.swiper-wrapper{
+.spiwer{
     width:100%;
+}
+
+.swiper-wrapper{
     padding-top:10px;
     animation: swiperhoverAnime 0.5s forwards;
 }
