@@ -135,30 +135,30 @@
 
 @keyframes posthoveranime {
     0%{
+        background-color: rgb(240, 240, 240);
+        border-top:10px solid rgb(240, 240, 240);
+        border-left:10px solid rgb(240, 240, 240);
+        border-bottom:10px solid rgb(240, 240, 240);
+    }
+    100%{
         background-color: rgb(220, 220, 220);
         border-top:10px solid rgb(220, 220, 220);
         border-left:10px solid rgb(220, 220, 220);
         border-bottom:10px solid rgb(220, 220, 220);
-    }
-    100%{
-        background-color: rgb(200, 200, 200);
-        border-top:10px solid rgb(200, 200, 200);
-        border-left:10px solid rgb(200, 200, 200);
-        border-bottom:10px solid rgb(200, 200, 200);
     }
 }
 @keyframes postunhoveranime {
     0%{
-        background-color: rgb(200, 200, 200);
-        border-top:10px solid rgb(200, 200, 200);
-        border-left:10px solid rgb(200, 200, 200);
-        border-bottom:10px solid rgb(200, 200, 200);
-    }
-    100%{
         background-color: rgb(220, 220, 220);
         border-top:10px solid rgb(220, 220, 220);
         border-left:10px solid rgb(220, 220, 220);
         border-bottom:10px solid rgb(220, 220, 220);
+    }
+    100%{
+        background-color: rgb(240, 240, 240);
+        border-top:10px solid rgb(240, 240, 240);
+        border-left:10px solid rgb(240, 240, 240);
+        border-bottom:10px solid rgb(240, 240, 240);
     }
 }
 

@@ -59,19 +59,23 @@
 
 @keyframes fadeAnime{
     from{
+        z-index:1;
         opacity:0%;
     }
     to{
+        z-index:1;
         opacity:100%;
     }
 }
 
 @keyframes fadeUpAnime{
     from{
+        z-index:1;
         opacity:0%;
         transform: translateY(50px);
     }
     to{
+        z-index:1;
         opacity:100%;
         transform:translateY(0);
     }

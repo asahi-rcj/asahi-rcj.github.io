@@ -14,6 +14,57 @@ body{
 a{
     text-decoration-line:none;
 }
+.swiper-wrapper{
+    padding-top:10px;
+    animation: swiperhoverAnime 0.5s forwards;
+}
+
+.swiper-wrapper:hover{
+    animation: swiperunhoverAnime 0.5s forwards;
+}
+
+@keyframes swiperhoverAnime {
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}
+
+@keyframes swiperunhoverAnime {
+    0%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.swiper-pagination{
+    background-color: rgba(200, 200, 200, 0.9);
+    margin-bottom:-0.7%;
+}
+
+.swiper-button-next{
+    padding:8px 15px 8px 20px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius:30px;
+    box-shadow:2px 2px 6px 4px rgba(0, 0, 0, 0.6),
+               2px 2px 6px 4px rgba(0, 0, 0, 0.2) inset;
+}
+.swiper-button-prev{
+    padding:8px 20px 8px 15px;
+    color:#333;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius:30px;
+    box-shadow:2px 2px 6px 4px rgba(0, 0, 0, 0.6),
+               2px 2px 6px 4px rgba(0, 0, 0, 0.2) inset;
+}
+
+.swiper-slide img{
+    width:100%;
+}
 
 /*ヘッダー*/
 #header{
