@@ -14,7 +14,9 @@ body{
 a{
     text-decoration-line:none;
 }
+
 .swiper-wrapper{
+    width:100%;
     padding-top:10px;
     animation: swiperhoverAnime 0.5s forwards;
 }
