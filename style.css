@@ -79,23 +79,21 @@ a{
 /*ヘッダー*/
 #header{
     height:30%;
-    background: linear-gradient(to bottom right, rgb(255, 255, 255) 20%, rgb(255, 174, 81) 50%, rgb(126, 167, 255));
+    background: linear-gradient(170deg, 
+        rgb(0, 0, 0), rgb(17, 36, 70) 70%, rgb(121, 146, 176) );
 }
 
 img.logo{
-    max-height:220px;
+    max-height:500px;
     max-width:1500px;
-    padding:10px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 40px;
     width:80%;
     min-width:1200px;
 }
 
 .headerlist{
-    background-color : rgb(100, 100, 100);
     min-width: 600px;
     display: flex;
     justify-content: center;
@@ -121,19 +119,19 @@ img.logo{
 
 @keyframes HeaderhoverAnime {
     0%{
-        background-color : rgb(100, 100, 100);
+        background-color : rgb(100, 100, 100, 0);
     }
     100%{
-        background-color : rgb(165, 165, 165);
+        background-color : rgb(165, 165, 165, 0.2);
     }
 }
 
 @keyframes HeaderunhoverAnime {
     0%{
-        background-color : rgb(165, 165, 165);
+        background-color : rgb(165, 165, 165, 0.2);
     }
     100%{
-        background-color : rgb(100, 100, 100);
+        background-color : rgb(100, 100, 100, 0);
     }
 }
 
@@ -157,7 +155,7 @@ img.logo{
     }
 
     img.logo{
-        width:140%;
+        width:100%;
         margin-left:-22%;
         margin-top:-2.5%;
         margin-bottom:-4%;
