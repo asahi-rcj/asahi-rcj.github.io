@@ -1,9 +1,10 @@
 .postslist a{
-    width:98%;
-    display:flex;
+    width:350px;
+    height:425px;
+    display:inline-flex;
     list-style: none;
     margin-bottom:2%;
-    border-radius: 10px;
+    border-radius: 5px;
     text-decoration-line:none;
     animation:postunhoveranime 0.5s forwards;
     box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
@@ -16,32 +17,40 @@
 
 .postslist a li{
     width: 75%;
-    font-size: 35px;
-    padding:5px 5px;
-    margin-left:1%;
-    margin-left:1%;
-    color:#3b3b3b;
-}
-
-.postslist a li p{
-    font-size: 20px;
-    padding:5px 5px;
+    font-size: 27px;
     margin-left:2%;
     color:#3b3b3b;
 }
+.postslist a li h1{
+    width: 130%;
+    font-size: 27px;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.postslist a li p{
+    font-size: 18px;
+    margin-left:4%;
+    color:#3b3b3b;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
 
 .postslist a li p.days{
-    font-size: 20px;
-    padding:5px 5px;
-    margin-top:0%;
+    font-size: 13px;
+    margin-top:3%;
     margin-left:0px;
     color:#3b3b3b;
     text-decoration-line:none;
 }
 
 .postslist a img{
-    width:25%;
-    margin-right:2%;
+    width:325px;
+    height:182px;
     box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
     animation:postslistpicunhover 0.3s forwards;
 }

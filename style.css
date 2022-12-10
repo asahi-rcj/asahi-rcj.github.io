@@ -296,8 +296,8 @@ img.logo{
 /*メイン部分*/
 .main{
     font-size:23px;
-    width: 75%;
-    margin-left: 3px;
+    width: 60%;
+    margin-left: 10%;
     margin-right: 10px;
     background-color: rgb(245, 245, 245);
     border-top: 10px solid rgb(245, 245, 245);
@@ -431,7 +431,7 @@ img.logo{
     padding-bottom: 10px;
     float:inherit;
     display:block;
-    font-size:20px;
+    font-size:15px;
     text-align:center;
 }
 

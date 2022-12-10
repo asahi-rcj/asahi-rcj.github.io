@@ -36,7 +36,6 @@
 <script>include_loading();</script>
 <script>include_header();</script>
 <div class="wrapper">
-    <script>include_sidebar();</script>
     <div class="main fadeUp delay-075s">
         <div class="swiper">
           <div class="swiper-wrapper">
@@ -58,6 +57,7 @@
           axios.get('content.md').then(response => document.getElementById('content').innerHTML = marked.parse(response.data));
         </script>
     </div>
+    <script>include_sidebar();</script>
 </div>
 <script>include_footer();</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
