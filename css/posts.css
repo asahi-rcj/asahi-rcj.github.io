@@ -94,6 +94,22 @@
     }
 }
 
+table {
+    border-collapse: collapse;
+}
+table, th, td {
+    padding: 8px;
+    padding-right: 40px;
+    border: 2px solid;
+    border-color: #333;
+}
+table th{
+    background: rgb(139, 139, 139);
+}
+table tr:nth-child(odd) td {
+	background: #ccc;
+}
+
 .postslist ul a li .postspic{
     display: grid;
     justify-content: right;
