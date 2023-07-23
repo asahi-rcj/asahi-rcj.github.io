@@ -3,7 +3,7 @@
 
 title: a_sa_hiの雑多なブログ
 description: a_sa_hiが世の中のいろいろなことについて書いたり書かなかったりします。
-baseurl: "/galada" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 
