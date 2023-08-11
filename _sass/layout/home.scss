@@ -1,7 +1,7 @@
 /*
   Style for Homepage
 */
-
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 #post-list {
   margin-top: 2rem;
 
@@ -90,7 +90,7 @@
 
 .pagination {
   color: var(--btn-patinator-text-color);
-  font-family: Lato, sans-serif;
+  font-family: 'Noto Sans Japanese', sans-serif;
 
   a:hover {
     text-decoration: none;
